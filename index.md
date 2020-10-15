@@ -9,21 +9,33 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<style type="text/css">
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>COUNTRY</th><th>SELLER</th><th>SHIPPING</th></tr></thead><tbody>
+ <tr><td>USA</td><td>1upkeyboard</td><td>YES</td></tr>
+ <tr><td>MEXICO</td><td>Mexsistor</td><td>NO</td></tr>
+ <tr><td>ALBANIA</td><td>HarashoPads</td><td>YES</td></tr>
+ <tr><td>GERMANY</td><td>CandyKeys</td><td>NO</td></tr>
+ <tr><td>AUSTRALIA</td><td>Josh Johnson</td><td>YES</td></tr>
+ <tr><td>SPAIN</td><td>NateGentile</td><td>YES</td></tr>
+ <tr><td>FRANCE</td><td>Vubualnog</td><td>YES</td></tr>
+</tbody></table>
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
