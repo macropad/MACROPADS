@@ -11,93 +11,37 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
-
-    <div class="padre">
-        <span class="hijo">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<BODY>
+    <TABLE BORDER=1 BGCOLOR=#ffffff CELLSPACING=0><FONT FACE="Calibri" COLOR=#000000><CAPTION><B>Database</B></CAPTION></FONT>
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-        th{ 
-            color:rgb(255, 0, 0);   
-            background-color: rgb(63, 64, 94);
-                }
-         tr{
-             color:rgb(255, 0, 212)
-         }  
-         a{
-             color:#2cbb1f;
-         }     
-    </style>
+    <THEAD>
+    <TR>
+    <TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Id</FONT></TH>
+    <TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Brand</FONT></TH>
+    <TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Website</FONT></TH>
+    <TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Country</FONT></TH>
     
+    </TR>
+    </THEAD>
+    <TBODY>
+    <TR VALIGN=TOP>
+    <TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>1</FONT></TD>
+    <TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>1upkeyboards</FONT></TD>
+    <TD BORDERCOLOR=#e7e6e6 ><U><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#0000ff><A HREF="https://www.1upkeyboards.com/">https://www.1upkeyboards.com/</A></FONT></U></TD>
+    <TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>USA</FONT></TD>
     
-    <table class="table table-striped">
-        <tr  class="bg-info">
-            <th data-column="brand" data-order="desc">Brand &#9650</th>
-            <th data-column="country" data-order="desc">Country &#9650</th>
-            <th data-column="products" data-order="desc">Intl. Shipping? &#9650</th>
-        </tr>
+    </TR>
     
-        <tbody id="myTable">
-            
-        </tbody>
-    </table>
+    <TR VALIGN=TOP>
+    <TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>2</FONT></TD>
+    <TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>MAX Keyboards</FONT></TD>
+    <TD BORDERCOLOR=#e7e6e6 ><U><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#0000ff><A HREF="https://www.maxkeyboard.com/">https://www.maxkeyboard.com/</A></FONT></U></TD>
+    <TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>USA</FONT></TD>
     
-    <script>
-        var myArray = [
-            {'brand':'1upkeyboards', 'country':'USA', 'products':'Yes'},
-            {'brand':'<a href="https://macropads.org/" target="_blank">Macro</a>', 'country':'USA, 'products':'No'},
-            {'brand':'Maxkeyboards', 'country':'USA', 'products':'Yes'},
-            {'brand':'KBDfans', 'country':'China', 'products':'Yes'},
-            {'brand':'TheMadNoodle', 'country':'USA', 'products':'Yes'},
-            {'brand':'NovelKeys', 'country':'USA', 'products':'Yes'},
-        ]
-    
-        $('th').on('click', function(){
-            var column = $(this).data('column')
-            var order = $(this).data('order')
-            var text = $(this).html()
-            text = text.substring(0, text.length - 1)
-    
-            if(order == 'desc'){
-                $(this).data('order', "asc")
-                myArray = myArray.sort((a,b) => a[column] > b[column] ? 1 : -1)
-                text += '&#9660'
-    
-            }else{
-                $(this).data('order', "desc")
-                myArray = myArray.sort((a,b) => a[column] < b[column] ? 1 : -1)
-                text += '&#9650'
-    
-            }
-            $(this).html(text)
-            buildTable(myArray)
-        })
-    
-        buildTable(myArray)
-    
-        function buildTable(data){
-            var table = document.getElementById('myTable')
-            table.innerHTML = ''
-            for (var i = 0; i < data.length; i++){
-                var row = `<tr>
-                                <td>${data[i].brand}</td>
-                                <td>${data[i].country}</td>
-                                <td>${data[i].products}</td>
-                          </tr>`
-                table.innerHTML += row
-    
-    
-            }
-        }
-    
-    </script>
-
-        </span>
-    </div>
-</body>
+    </TR>
+    </TBODY>
+    <TFOOT></TFOOT>
+    </TABLE>
+    </BODY>
 </html>
 
