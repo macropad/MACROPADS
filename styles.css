@@ -1,42 +1,57 @@
-body{
-    background: #dddddd;
-    font-family: monospace;
-}
+/*Estilos generales para todos los proyectos*/
+* {
+  box-sizing: border-box; }
 
-.container-table{
-    width: 90%;
-    background: white;
-    margin: 50px auto;
-    box-shadow: 0 0 20px #333;
+body {
+  margin: 0;
+  font-family: monospace;
+  color: #333; }
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 50px;
-}
+h1 {
+  text-align: center;
+  color: #333; }
 
-.table__title{
-    grid-column-start: 1;
-    grid-column-end: 5;
-
+.table-rwd {
+  font-size: 1.9em;
+  border: 1px solid rgba(181, 213, 144, 0.5);
+  color: #666;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto; }
+  .table-rwd td, .table-rwd th {
+    text-align: center;
+    padding: .8em;
+    border-bottom: 1px solid rgba(181, 213, 144, 0.5); }
+  .table-rwd th {
     background: #033d44;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.9em;
-}
+    color: #fff;
+    font-weight: normal;
+    text-align: center; }
+  .table-rwd td {
+    text-align: center; }
 
-.table__header, .table__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.table__header{
-    font-weight: bold;
-    font-size: 1.5em;
-}
-.table__item{
-    font-size: 1.2em;
-    padding: 10px;
-}
+    .table-rwd td:first-of-type {
+      text-align: left; }
+      .table-rwd td:first-of-type:before {
+        content: ""; }
+      .table-rwd td:first-of-type:after {
+        content: ""; }
+  .table-rwd tr:hover {
+    background: rgba(181, 213, 144, 0.2); }
+  .table-rwd tr td:nth-child(2n) {
+    background: rgba(181, 213, 144, 0.2); }
+
+.table-container {
+  overflow-x: auto; }
+
+.table-rwd {
+  min-width: 900px; }
+  .table-rwd td:first-child {
+    position: absolute;
+    background: #fff;
+    width: 8em; }
+  .table-rwd th:first-child {
+    width: 8em; }
+  .table-rwd tr:hover td:first-child {
+    background: #fff;
+    color: #fff; }
