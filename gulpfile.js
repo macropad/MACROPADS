@@ -1,4 +1,4 @@
-const gulp = require('gulp'),
+/*const gulp = require('gulp'),
       sass = require('gulp-sass'),
       jade = require('gulp-jade'),
       autoprefixer = require('gulp-autoprefixer'),
@@ -29,4 +29,4 @@ gulp.task('default', () =>{
   });
   gulp.watch('./dev/styles.scss', ['sass']);
   gulp.watch('./dev/index.jade', ['jade']);
-});
+});*/
